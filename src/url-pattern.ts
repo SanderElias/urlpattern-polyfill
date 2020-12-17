@@ -142,7 +142,7 @@ export class URLPattern {
       }
     }
     // invalid arguments
-    if (typeof init !== 'object') {
+    if (!init || typeof init !== 'object') {
       throw new TypeError('Incorrect params passed');
     }
 
